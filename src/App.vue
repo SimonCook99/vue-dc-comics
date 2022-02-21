@@ -3,6 +3,7 @@
     <myHeader/>
     <mainContent/>
     <buySection/>
+    <myFooter/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import myHeader from './components/myHeader.vue'
 import mainContent from './components/mainContent.vue'
 import buySection from './components/buySection.vue'
+import myFooter from './components/myFooter.vue'
 
 export default {
   name: 'App',
   components: {
     myHeader,
     mainContent,
-    buySection
+    buySection,
+    myFooter
   }
 }
 </script>

@@ -40,8 +40,8 @@ export default {
     section{
        background-color: #0282f9;
 
-       ul{
-           display: flex;
+        ul{
+            display: flex;
             justify-content: center;
         }
 
