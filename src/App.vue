@@ -1,16 +1,22 @@
 <template>
   <div id="app">
     <myHeader/>
+    <mainContent/>
+    <buySection/>
   </div>
 </template>
 
 <script>
 import myHeader from './components/myHeader.vue'
+import mainContent from './components/mainContent.vue'
+import buySection from './components/buySection.vue'
 
 export default {
   name: 'App',
   components: {
-    myHeader
+    myHeader,
+    mainContent,
+    buySection
   }
 }
 </script>
@@ -28,5 +34,5 @@ export default {
   body{
     font-family: 'Roboto', sans-serif;
   }
-  
+
 </style>
