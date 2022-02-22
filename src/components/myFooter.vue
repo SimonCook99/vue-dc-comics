@@ -1,5 +1,6 @@
 <template>
   <footer>
+      <!-- Footer principale che include le liste e la sezione social (in un altro componente)-->
       <div class="footer-list">
             <div class="first-section">
                 <h2>DC comics</h2>
@@ -57,8 +58,9 @@
             </div>
 
             <img src="../assets/img/dc-logo-bg.png" alt="logo bg">    
-        </div>
+       </div>
 
+        <!--Chiamo e importo il componente finale del footer-->
         <finalFooter/>
   </footer>
 </template>
@@ -84,6 +86,7 @@ export default {
         justify-content: center;
         padding: 30px;
         height: 450px;
+        overflow: hidden;
 
         img{
             margin-left: 200px;

@@ -28,12 +28,12 @@ export default {
 
 <style scoped lang="scss">
     footer{
-       background-color: #303030;
-       display: flex;
-       justify-content: space-around;
-       align-items: center;
-       padding: 40px;
-       height: 120px;
+        background-color: #303030;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px;
+        height: 120px;
 
         h2{
            color: white;

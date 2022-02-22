@@ -1,5 +1,6 @@
 <template>
-  <section>
+    <!--Sezione azzurra dei vari acquisti-->
+    <section>
 
       <ul>
           <li>
@@ -19,7 +20,7 @@
               <p>comic shop locator</p>
           </li>
           <li>
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+              <img src="../assets/img/buy-dc-power-visa.svg" alt="">
               <p>DC power visa</p>
           </li>
       </ul>
@@ -51,7 +52,7 @@ export default {
             padding: 30px;
 
             img{
-                max-width: 40px;
+                max-width: 35px;
                 margin-right: 15px;
             }
             p{
