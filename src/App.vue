@@ -4,7 +4,7 @@
     <myJumbotron/>
     <mainContent/>
     <buySection/>
-    <myFooter/>
+    <myFooter :lista1="lista1" :lista2="lista2" :lista3="lista3"/>
   </div>
 </template>
 
@@ -23,6 +23,17 @@ export default {
     mainContent,
     buySection,
     myFooter
+  },
+
+  data(){
+    return{
+      listeFooter: {
+        lista1: ["Characters", "Comics", "Movies", "Tv", "Games", "Videos", "News"],
+        lista2: ["Shop DC", "Shop DC Collectibles"],
+        lista3: ["Terms of use", "Privacy policy (New)","Ad Choices","Advertising","Jobs","Subscriptions","Talent workshops","CPSC certificates","Ratings","Shop helps","contact us"],
+        lista4: ["DC", "Mad Magazine", "DC Kids", "DC Universe", "DC Power visa"]
+      }
+    }
   }
 }
 </script>

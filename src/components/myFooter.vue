@@ -6,23 +6,13 @@
                 <h2>DC comics</h2>
 
                 <ul>
-                    <li>Characters</li>
-                    <li>Comics</li>
-                    <li>Movies</li>
-                    <li>Tv</li>
-                    <li>Games</li>
-                    <li>Collectibles</li>
-                    <li>Videos</li>
-                    <li>Fans</li>
-                    <li>News</li>
-                    <li>Shop</li>
+                    <li v-for="(lista, index) in lista1" :key="index">{{lista}}</li>
                 </ul>
 
                 <h2>Shop</h2>
 
                 <ul>
-                    <li>Shop DC</li>
-                    <li>Shop DC collectibles</li>
+                    <li v-for="(lista, index) in lista2" :key="index">{{lista}}</li>
                 </ul>
             </div>
 
@@ -30,17 +20,7 @@
                 <h2>DC</h2>
 
                 <ul>
-                    <li>Characters</li>
-                    <li>Comics</li>
-                    <li>Movies</li>
-                    <li>Tv</li>
-                    <li>Games</li>
-                    <li>Collectibles</li>
-                    <li>Videos</li>
-                    <li>Fans</li>
-                    <li>News</li>
-                    <li>Shop</li>
-                    <li>Collectibles</li>
+                    <li v-for="(lista, index) in lista3" :key="index">{{lista}}</li>
                 </ul>
 
             </div>
@@ -72,8 +52,9 @@ import finalFooter from "./finalFooter.vue"
 export default {
   name: 'mainContent',
   components: {
-      finalFooter
-  }
+    finalFooter
+  },
+  props:["lista1", "lista2", "lista3"]
   
 }
 

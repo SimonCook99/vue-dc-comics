@@ -125,6 +125,7 @@ export default {
     }
 
     div.card{
+      width: calc(80% / 5);
       display: flex;
       flex-direction: column;
       align-items: center;
