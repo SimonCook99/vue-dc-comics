@@ -6,6 +6,7 @@
                 <h2>DC comics</h2>
 
                 <ul>
+                    <!--ciclo che scorre lungo la lista passata come parametro in App.vue-->
                     <li v-for="(lista, index) in lista1" :key="index">{{lista}}</li>
                 </ul>
 
@@ -29,11 +30,7 @@
                 <h2>Sites</h2>
 
                 <ul>
-                    <li>DC</li>
-                    <li>Mad Magazine</li>
-                    <li>DC kids</li>
-                    <li>DC universe</li>
-                    <li>DC power visa</li>
+                    <li v-for="(lista,index) in lista4" :key="index">{{lista}}</li>
                 </ul>
             </div>
 
@@ -54,7 +51,7 @@ export default {
   components: {
     finalFooter
   },
-  props:["lista1", "lista2", "lista3"]
+  props:["lista1", "lista2", "lista3", "lista4"]
   
 }
 

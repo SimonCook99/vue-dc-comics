@@ -1,10 +1,23 @@
 <template>
   <div id="app">
-    <myHeader/>
+
+    <!--Passo la listaHeader al componente header come prop-->
+    <myHeader 
+      :lista="listaHeader"
+    />
+
     <myJumbotron/>
     <mainContent/>
     <buySection/>
-    <myFooter :lista1="lista1" :lista2="lista2" :lista3="lista3"/>
+
+    <!--Passo le listeFooter al componente footer come props-->
+    <myFooter 
+      :lista1="listeFooter.lista1" 
+      :lista2="listeFooter.lista2" 
+      :lista3="listeFooter.lista3"
+      :lista4="listeFooter.lista4"
+    />
+
   </div>
 </template>
 
@@ -26,7 +39,11 @@ export default {
   },
 
   data(){
+    //Qui ci sarà l'insieme di liste da creare dinamicamente nei vari componenti
     return{
+
+      listaHeader: ["Characters", "Comics", "Movies", "Tv", "Games", "Collectibles", "Videos", "Fans", "News", "Shop"],
+
       listeFooter: {
         lista1: ["Characters", "Comics", "Movies", "Tv", "Games", "Videos", "News"],
         lista2: ["Shop DC", "Shop DC Collectibles"],

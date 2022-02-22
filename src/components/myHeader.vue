@@ -4,16 +4,8 @@
 
       <nav>
           <ul>
-              <li>Characters</li>
-              <li>Comics</li>
-              <li>Movies</li>
-              <li>Tv</li>
-              <li>Games</li>
-              <li>Collectibles</li>
-              <li>Videos</li>
-              <li>Fans</li>
-              <li>News</li>
-              <li>Shop</li>
+              <!--ciclo che scorre lungo la lista passata come parametro in App.vue-->
+              <li v-for="(item,index) in lista" :key="index">{{item}}</li>
           </ul>
       </nav>
   </header>
@@ -23,6 +15,8 @@
 
 export default {
   name: 'myHeader',
+
+  props:["lista"]
   
 }
 
